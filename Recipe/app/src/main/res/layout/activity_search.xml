@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cedex.recipe.ui.search.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+
+        android:id="@+id/search_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:id="@+id/search_back"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/search_title"
+                android:textSize="25dp"
+                android:textColor="@color/baseColor"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:id="@+id/search_close"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/search_searchview"
+        android:background="#e6e6e6"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+         />
+
+
+</LinearLayout>

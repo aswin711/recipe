@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="5dp">
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/list_shopping_items_check"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_shopping_items_name"
+        android:text="4 (4.0 ounce fillet)red snapper"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/list_shopping_items_check"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

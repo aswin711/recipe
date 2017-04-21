@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cedex.recipe.ui.category.item.ItemViewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/itemview_toolbar"
+            layout="@layout/toolbar_itemview"/>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemview_toolbar"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="305dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="305dp"
+                        android:id="@+id/itemview_img"
+                        android:src="@drawable/bg_cat1"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:id="@+id/dummy_text"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:background="@color/transparentBlack"
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true">
+                            <ImageView
+                                android:id="@+id/item_time_pic"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_below="@+id/item_name"
+                                android:layout_marginTop="2dp"
+                                android:paddingBottom="1dp"
+
+
+                                android:src="@drawable/ic_time" />
+
+                            <TextView
+                                android:id="@+id/item_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="15 min"
+                                android:textColor="#fff"
+
+                                android:layout_alignBottom="@+id/item_time_pic"
+                                android:layout_toRightOf="@+id/item_time_pic"
+                                android:layout_toEndOf="@+id/item_time_pic" />
+
+                            <ImageView
+                                android:id="@+id/item_serving_pic"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_alignTop="@+id/item_time_pic"
+                                android:layout_marginLeft="21dp"
+                                android:layout_marginTop="2dp"
+                                android:paddingBottom="3dp"
+                                android:layout_marginStart="21dp"
+                                android:layout_toEndOf="@+id/item_time"
+                                android:layout_toRightOf="@+id/item_time"
+                                android:src="@drawable/ic_servings" />
+
+                            <TextView
+                                android:id="@+id/item_servings"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="6 servings"
+                                android:layout_marginLeft="2dp"
+                                android:textColor="#fff"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/item_serving_pic"
+                                android:layout_toEndOf="@+id/item_serving_pic" />
+
+                            <ImageView
+                                android:id="@+id/item_ingredients_pic"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="18dp"
+
+                                android:src="@drawable/ic_ingredients"
+                                android:layout_alignBottom="@+id/item_servings"
+                                android:layout_toRightOf="@+id/item_servings"
+                                android:layout_toEndOf="@+id/item_servings"
+                                android:layout_marginStart="18dp" />
+
+                            <TextView
+                                android:id="@+id/item_ingredients"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 ingredients"
+                                android:textColor="#fff"
+                                android:layout_marginLeft="2dp"
+                                android:layout_alignBottom="@+id/item_ingredients_pic"
+                                android:layout_toRightOf="@+id/item_ingredients_pic"
+                                android:layout_toEndOf="@+id/item_ingredients_pic" />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                    <ToggleButton
+                        android:id="@+id/item_add"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+
+
+                        android:background="@drawable/ic_add_toggle_selecter_40dp"
+                        android:textOn=""
+                        android:textOff=""
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginBottom="14dp" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="305dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INGREDIENTS"
+                        android:id="@+id/item_view_ingredients"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:textColor="@color/baseColor"
+                        android:background="#f0eff5"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/listview_ingredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/add_to_shopping"
+                        android:text="ADD TO SHOPPING LIST"
+                        android:textSize="15dp"
+                        android:background="@color/baseColor"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PREPARATION"
+                        android:id="@+id/item_view_preparations"
+                        android:textSize="15dp"
+                        android:background="#f0eff5"
+                        android:textColor="@color/baseColor"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:id="@+id/listview_preparations">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="20dp">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EMAIL"
+                                android:id="@+id/send_email"
+                                android:textColor="#fff"
+                                android:background="@color/baseColor"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="10dp"
+                                android:textAlignment="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:visibility="invisible"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WATCH VIDEO"
+                                android:textColor="#fff"
+                                android:background="@color/baseColor"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:textAlignment="center"
+                                android:visibility="invisible"/>
+
+                        </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_toolbar"
+    android:layout_height="75dp"
+    android:paddingBottom="10dp"
+    android:background="@color/baseColor"
+    app:popupTheme="@style/AppTheme.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hamburger_white"
+
+            android:background="@color/baseColor"
+            android:id="@+id/toolbar_nav"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:text="Item Name"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textSize="25dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_search"
+            android:src="@drawable/ic_search_white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_menu"
+            android:src="@drawable/ic_settings"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"
+
+            android:layout_alignTop="@+id/item_search"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
+

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cedex.recipe.ui.settings.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentBlack"
+        android:textColor="@color/baseColorTransparent"
+        android:textSize="25dp"
+        android:text="Clear Data"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <CheckBox
+            android:id="@+id/settings_fav_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/clearfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/settings_fav_clear"
+            android:text="Clear Favourites"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/settings_ingredients_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_fav_clear"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/clearingred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearfav"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/settings_ingredients_clear"
+            android:text="Clear Ingredients List"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/settings_clear"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/clearingred"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/baseColorTransparent"
+            android:text="CLEAR"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

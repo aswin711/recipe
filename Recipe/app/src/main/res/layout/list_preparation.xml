@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_circle_outer"
+            android:textAlignment="center"
+            android:textColor="@color/backgroundGrey"
+            android:id="@+id/pre_index"
+            android:backgroundTint="@color/backgroundGrey"
+            android:text="1"
+            android:textSize="12dp"
+            android:paddingTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="7dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pre_step"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/pre_index"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#000"
+            android:text="Rinse the vegetables "/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

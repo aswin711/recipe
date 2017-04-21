@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_bg"
+    tools:context="com.example.cedex.recipe.ui.register.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/login_background_shape"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/register_username"
+            android:hint="Username"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            style="@style/Base.Widget.AppCompat.EditText"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/register_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/Base.Widget.AppCompat.EditText"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/register_confirm_password"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/Base.Widget.AppCompat.EditText"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/register_button"
+            android:textSize="20dp"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:background="@color/baseColor"
+            android:paddingTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            />
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

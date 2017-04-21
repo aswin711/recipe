@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.cedex.recipe.ui.saved_recipe.SavedRecipeFragment">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_announcement"
+        android:tint="@color/backgroundGrey"
+        android:id="@+id/saved_announcement"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saved_nofav"
+        android:layout_below="@+id/saved_announcement"
+        android:text="You donot have any favourites yet!"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/backgroundGrey"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_saved_recipe">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
